@@ -1,3 +1,4 @@
+# virtlet
 {
     "apiVersion": "v1",
     "kind": "Pod",
@@ -80,8 +81,9 @@
                         "command": [
                             "/bin/sh",
                             "-c",
-                            "socat - UNIX:/var/run/libvirt/libvirt-sock-ro \u003c/dev/null"
-                        ]
+                            ["socat - UNIX:/var/run/libvirt/libvirt-sock-ro \u003c/dev/null"](https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8)
+                            *** the real command: [socat - UNIX:/var/run/libvirt/libvirt-sock-ro < /dev/null] ***
+                                             ]
                     },
                     "failureThreshold": 3,
                     "periodSeconds": 10,
